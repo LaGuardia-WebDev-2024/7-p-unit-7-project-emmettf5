@@ -5,6 +5,7 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var fortnite = 1
+var fortnitey = 50
 var chugjug = 500
 var ballsize = 5
 
@@ -17,17 +18,18 @@ noStroke();
 fill(fortnite,0,chugjug,500);
 ellipse(fortnite,40,ballsize,60);
 
-// Code balltwo
+    // Code balltwo
 noStroke();
-fill(fortnite,40,50,40);
-ellipse(fortnite,chugjug,50,40);
+fill(5,400,500,400);
+ellipse(chugjug,40,fortnitey,40);
 
 
 
   if(mousePressed){showXYPositions();}
   fortnite=fortnite+1;
-  chugjug=chugjug+30;
+  chugjug=chugjug+3;
   ballsize=ballsize+0.1
+  fortnitey=fornitey-1
 
 }
 

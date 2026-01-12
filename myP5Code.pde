@@ -4,20 +4,30 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
+var fortnite = 1
+var chugjug = 500
+var ballsize = 5
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
-  
+    // Code ballone
+noStroke();
+fill(fortnite,0,chugjug,500);
+ellipse(fortnite,40,ballsize,60);
 
-
-
+// Code balltwo
+noStroke();
+fill(fortnite,40,50,40);
+ellipse(fortnite,chugjug,50,40);
 
 
 
   if(mousePressed){showXYPositions();}
+  fortnite=fortnite+1;
+  chugjug=chugjug+30;
+  ballsize=ballsize+0.1
 
 }
 

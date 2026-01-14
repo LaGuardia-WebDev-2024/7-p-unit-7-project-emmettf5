@@ -5,9 +5,9 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var fortnite = 1
-var fortnitey = 50
-var chugjug = 500
+var chugjug = 5
 var ballsize = 5
+var triangley = 119
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -15,21 +15,25 @@ draw = function(){
   background(255,255,255,0);
     // Code ballone
 noStroke();
-fill(fortnite,0,chugjug,500);
-ellipse(fortnite,40,ballsize,60);
+fill(1,0,chugjug,500);
+ellipse(fortnite,5,ballsize,400);
 
-    // Code balltwo
+    // Code triangletwo
 noStroke();
-fill(5,400,500,400);
-ellipse(chugjug,40,fortnitey,40);
+fill(triangle,262,336,262,216,150);
+triangle(triangley,262,336,262,216,150);
 
-
+   // Code balltwo
+noStroke();
+fill(ballsize,270,fortnite,800);
+rect(ballsize,270,fortnite,chugjug);
 
   if(mousePressed){showXYPositions();}
-  fortnite=fortnite+1;
-  chugjug=chugjug+3;
+  fortnite=fortnite+0.1;
+  chugjug=chugjug+0.3;
   ballsize=ballsize+0.1
-  fortnitey=fornitey-1
+  triangley=triangley+.5
+
 
 }
 
